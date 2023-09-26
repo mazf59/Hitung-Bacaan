@@ -22,10 +22,10 @@ function hitungRencanaBaca(event) {
         tanggalAkhir = new Date(akhirElem.value);
     } else {
         tanggalAkhir = new Date(tanggalMulai.getTime());
-        tanggalAkhir.setDate(tanggalMulai.getDate() + parseInt(hariElem.value));
+        tanggalAkhir.setDate(tanggalMulai.getDate() + parseInt(hariElem.value) - 1);
     }
 
-    if (isNaN(sisaHalaman) || isNaN(tanggalMulai.getTime()) || isNaN(tanggalAkhir.getTime()) || sisaHalaman <= 0 || tanggalAkhir <= tanggalMulai) {
+    if (isNaN(sisaHalaman) || isNaN(tanggalMulai.getTime()) || isNaN(tanggalAkhir.getTime()) || sisaHalaman <= 0 || tanggalAkhir < tanggalMulai) {
         hasilElem.innerText = "Input tidak valid.";
         hasilElem.style.color = "red";
         return;
