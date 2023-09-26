@@ -42,10 +42,10 @@ function gantiTanggalAkhir() {
     const groupHari = document.getElementById("group-hari");
     groupTanggalAkhir.classList.toggle('hidden');
     groupHari.classList.toggle('hidden');
-    
+
     const akhirElem = document.getElementById("akhir");
     const hariElem = document.getElementById("hari");
-    
+
     akhirElem.required = !akhirElem.required;
     hariElem.required = !hariElem.required;
 }

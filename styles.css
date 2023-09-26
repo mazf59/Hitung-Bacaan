@@ -1,28 +1,41 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    padding: 0;
     background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-form {
+.container {
     background-color: #ffffff;
-    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 405px;
-    margin: left;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
 }
 
 .form-group {
     margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
 }
 
-.output {
-    word-wrap: break-word;
-    margin-top: 10px;
-    font-weight: bold;
-    padding: 10px;
-    border-radius: 5px;
+.radio-buttons {
+    margin: 3px 0;
+    text-align: left;
+    display: inline-block;
+    margin-left: 35%;
+    margin-right: auto;
+    width: 80%;
 }
 
 .hidden {
@@ -36,8 +49,24 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%;
 }
 
 button:hover {
     background-color: #45a049;
+}
+
+.output {
+    word-wrap: break-word;
+    margin-top: 10px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.center-label {
+    display: block;
+    text-align: center;
+    width: 100%;
 }

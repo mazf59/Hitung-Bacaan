@@ -9,34 +9,40 @@
 </head>
 
 <body>
-    <h1>Kalkulator Rencana Bacaan</h1>
-    <form id="readingCalculatorForm">
-        <div class="form-group">
-            <label for="halaman">Halaman:</label>
-            <input type="number" id="halaman" required>
-        </div>
-        <div class="form-group">
-            <label for="mulai">Tanggal Mulai:</label>
-            <input type="date" id="mulai" required>
-        </div>
-        <div class="form-group">
-            <label>Jenis Tanggal Akhir:</label>
-            <input type="radio" id="tanggal-akhir" name="jenis-tanggal-akhir" checked>
-            <label for="tanggal-akhir">Tanggal Tertentu</label>
-            <input type="radio" id="jumlah-hari" name="jenis-tanggal-akhir">
-            <label for="jumlah-hari">Jumlah Hari</label>
-        </div>
-        <div class="form-group hidden" id="group-hari">
-            <label for="hari">Hari:</label>
-            <input type="number" id="hari">
-        </div>
-        <div class="form-group" id="group-tanggal-akhir">
-            <label for="akhir">Tanggal Akhir:</label>
-            <input type="date" id="akhir" required>
-        </div>
-        <button type="submit">Hitung</button>
-        <div id="hasil" class="output"></div>
-    </form>
+    <div class="container">
+        <h1 class="title">Kalkulator Rencana Bacaan</h1>
+        <form id="readingCalculatorForm">
+            <div class="form-group">
+                <label for="halaman">Halaman:</label>
+                <input type="number" id="halaman" required>
+            </div>
+            <div class="form-group">
+                <label for="mulai">Tanggal Mulai:</label>
+                <input type="date" id="mulai" required>
+            </div>
+            <div class="form-group">
+                <label class="center-label">Jenis Tanggal Akhir:</label>
+                <div class="radio-buttons">
+                    <input type="radio" id="tanggal-akhir" name="jenis-tanggal-akhir" checked>
+                    <label for="tanggal-akhir">Tanggal Tertentu</label>
+                </div>
+                <div class="radio-buttons">
+                    <input type="radio" id="jumlah-hari" name="jenis-tanggal-akhir">
+                    <label for="jumlah-hari">Jumlah Hari</label>
+                </div>
+            </div>
+            <div class="form-group hidden" id="group-hari">
+                <label for="hari">Hari:</label>
+                <input type="number" id="hari">
+            </div>
+            <div class="form-group" id="group-tanggal-akhir">
+                <label for="akhir">Tanggal Akhir:</label>
+                <input type="date" id="akhir" required>
+            </div>
+            <button type="submit">Hitung</button>
+            <div id="hasil" class="output"></div>
+        </form>
+    </div>
     <script src="script.js"></script>
 </body>
 
