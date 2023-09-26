@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.output {
+    margin-top: 10px;
+    font-weight: bold;
+}
+.hidden {
+    display: none;
+}
