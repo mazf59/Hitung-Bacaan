@@ -22,7 +22,7 @@ function hitungRencanaBaca(event) {
         tanggalAkhir = new Date(akhirElem.value);
     } else {
         tanggalAkhir = new Date(tanggalMulai.getTime());
-        tanggalAkhir.setDate(tanggalMulai.getDate() + parseInt(hariElem.value) - 1);
+        tanggalAkhir.setDate(tanggalMulai.getDate() + parseInt(hariElem.value));
     }
 
     if (isNaN(sisaHalaman) || isNaN(tanggalMulai.getTime()) || isNaN(tanggalAkhir.getTime()) || sisaHalaman <= 0 || tanggalAkhir < tanggalMulai) {
